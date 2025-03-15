@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()  # Antes de usar os.getenv()
 
 # Configuración recomendada: Usar variables de entorno para las credenciales
-# (Si no usas .env, reemplaza directamente la cadena de conexión)
+# Le pasamos la variable de entorno a la cadena de conexión desde el archivo .env
 CONNECTION_STRING = os.getenv("MONGODB_URI")
 
 # Cliente como variable global (se inicializa una sola vez)
